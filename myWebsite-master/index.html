@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shubham Verma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Certification</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shubham Verma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certification</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-1.png" alt="Shubham Verma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shubham Verma</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/shubham-verma-84a5b1229/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/keys7'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Recent Achievement</h3>
+              <p>AWS Practitioner<br />Data Structures & Algorithms</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Vellore Institute of Technology<br />B.Tech. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm pursuing Computer Engineering at VIT (Vellore Institute of Technology - Bhopal).
+              Ranked 4th in a Google Developers Group hackathon,
+              I love translating ideas into action. Contributed to a research paper on Computer Vision and Drone Tech in Agriculture 4.0.
+              Skilled in Data Structures (C++), Web Dev (NodeJs, MySQL), and Flutter. Passion drives my diverse tech interests!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certification'"
+      />
+    </section>
+    <br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certification</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/aws cloud practictioner .png"
+                alt="Certification 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AWS Cloud Practitioner</h2>
+            <div class = "text-container">
+            <p align="left">The AWS Certified Cloud Practitioner certification validates a high-level understanding of AWS Cloud,
+            services, and terminology, making it a good starting point for individuals with no prior IT or cloud experience
+            or line-of-business employees looking for foundational cloud literacy. These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. </p>
+          </div>
+          <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7137340838157729792/'"
+              >
+                LinkedIn
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/computer networks.png"
+                alt="Certification 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Bits and Bytes of Computer Networking</h2>
+            <div class ="text-container">
+              <p align="left">
+                Computer Networking: the invisible force behind our connected world. From protocols to security, it's the backbone of our digital interactions. Excited to explore this dynamic realm shaping our tech landscape. Let's connect and dive into the world of Computer Networking!
+              </p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7137353861798756352/'"
+              >
+                LinkedIn
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/DSA.png"
+            alt="Certification 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Data Structures & Algorithms</h2>
+        <div class ="text-container">
+          <p align="left">
+            Data Structures and Algorithms certification program offered by CodeHelp, under the guidance of Love Babbar Ex-Amazon, Ex-Microsoft. This comprehensive five-month course provided a deep dive into various algorithms and data structures. I gained profound insights into essential concepts like arrays, stacks, linked lists, and more, exploring their intricacies and practical applications. A notable highlight was the rigorous problem-solving approach. I diligently solved over 400+ problems on platforms such as LeetCode, GeeksforGeeks, and CodeStudio. This dedicated practice refined my problem-solving skills and equipped me to tackle a wide range of challenges. This experience has significantly enhanced my proficiency in Data Structures and Algorithms, enabling me to approach complex problems with greater confidence and agility.
+          </p>
+        </div>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7137693121810677760/'"
+          >
+            LinkedIn
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br>
+    <br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-1.gif"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Trade PreNew</h2>
+            <div class="text-container">
+              <p align="left">
+                As the name suggest TRADE PRENEW is the best platform for the prediction of share prices and business related news.Prediction aims to determine the future movement of the share value of a financial exchange. So it helps to buy low and sell high.Trading on news releases can prove vastly beneficial to traders and can significantly strengthen their trading strategy by adding economic announcements to their purely technical and charting approach.
+              </p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/TradePreNew.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/TradePreNew.git'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-2.gif"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Crazy Varker</h2>
+            <div class="text-container">
+              <p align="left">
+                Resume writing can be stressful, confusing, and time-consuming if you do it all on your own. With our Resume Maker, it’s quick, pain-free, and effective.
+                <p align="left">The Crazy Varker website's goals are to offer consumers a practical and simple platform for making resumes that seem professional.</p>
+                <p align="left">You can also customize it to your own needs and personality and hit 'Download'. It's that easy to use, even if you've never made a resume in your life before!</p>
+              </p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/Crazy-Varker.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/Crazy-Varker.git'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pro-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AvoCode</h2>
+            <div class="text-container">
+              <p align="left">
+                As the name suggests AvoCode is the best platform for Learning and Growing new skills every day our application will provide all the best and top knowing paid courses at a very reasonable price and time-to-time just for FREE so that every student can afford and start learning new skills and also for those who don't know from where to start and where to stop we will provide many roadmaps of multiple courses like DSA, Coding Languages, etc.
+              </p>
+            </div>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/AvoCode-App.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/keys7/AvoCode-App.git'"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:shubkeys@gmail.com">shubkeys@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/shubham-verma-84a5b1229/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Certification</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Shubham Verma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
