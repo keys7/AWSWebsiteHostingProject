@@ -40,6 +40,12 @@ This is the service tof aws for Content Delivery Service that help to deliver ou
 2. there si the option for creating the CNAME Record in Route 53
 3. now after creating the Distribuation in cloudFront we can copy the Domain Name from cloudFront and form the A Record in aws Route 53 (Alias Target).
 
+# Final Website Hosted using AWS Services
+
+
+https://github.com/keys7/AWSWebsiteHostingProject/assets/101874897/fabbd54d-d870-4d57-8154-1e0b007255c9
+
+
 
 
 
